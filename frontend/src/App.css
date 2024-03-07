@@ -1,0 +1,270 @@
+.bodys {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 10%;   
+}
+
+section {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap:10%
+}
+label:after {
+  content: "*";
+  color: red;
+}
+.inputBox, .inputBox1 {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.note {
+  color: #666;
+  margin-top: -10px;
+  font-size: 12px;
+}
+
+label[for="street1"] ,
+label[for="street2"],
+label[for="permanentStreet1"] ,
+label[for="permanentStreet2"]  {
+  color: gray;
+}
+
+
+.inputBox label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"],
+.inputBox input[type="file"] ,
+.inputBox input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.inputDocs{
+ color: gray;
+ position: relative;
+}
+
+.inputDocs input[type="text"],
+.inputDocs input[type="email"],
+.inputDocs input[type="file"] ,
+.inputDocs input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;   
+}
+
+.inputBox1 input[type="text"]{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputBox1 ,.note{
+margin-bottom: 10px;
+}
+
+.sameAddress {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+button.submit {
+  background-color: rgb(41, 40, 40);
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 15%;
+}
+
+button.submit:hover {
+  background-color: #c6c9cc;
+  color: #333;
+}
+
+.docs{
+display: flex;
+gap: 10%
+}
+
+.btn-submit{
+display: flex;
+justify-content:center
+
+}
+.docsBtn button{
+  background-color: #333;
+  border: 0;
+  color: #fff;
+  width: 100%;
+  height: 50%;
+  font-weight: 800;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.docsBtn1, .docsBtn{
+display: flex;
+width: 5%;
+align-items: center;
+justify-content: center;
+margin-left: -40px;
+}
+.container{
+  max-width: 100%;
+}
+.btns{
+  padding: 1%;
+  background-color: #2a2323e8;
+  color: white;
+  border-radius: 11px;
+  width: 10%;
+}
+
+
+.inputBox1 {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+#fileType {
+  padding-right: 25px; 
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  cursor: pointer;
+}
+
+
+
+
+.file-input__input {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+z-index: -1;
+}
+
+.file-input__label {
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+border-radius: 4px;
+font-size: 14px;
+font-weight: 600;
+color: #fff;
+font-size: 14px;
+padding: 10px 12px;
+background-color: #ffffff;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+height: 16px;
+margin-right: 4px;
+}
+
+.custom-file-input {
+color: transparent;
+
+}
+.custom-file-input::-webkit-file-upload-button {
+visibility: hidden;
+}
+
+.custom-file-input::before {
+content: "▲";
+  color: #000;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: right;
+  outline: none;
+   position: absolute;
+  right: 0px;  
+}
+.custom-file-input:focus {
+outline: none !important;
+border: none;
+
+}
+.custom-file-input:active::before {
+    border: none;
+   
+}
+
+.custom-file-input{
+border: none;
+}
+
+
+/* Mobile view */
+
+@media only screen and (max-width: 650px) {
+.inputBox,.inputDocs,.inputBox1,.docs{
+flex:none
+}
+  main {
+      padding: 5%; 
+  }
+  .inputGroup {
+      gap: 5%; 
+  }
+  .inputBox input[type="text"],
+  .inputBox input[type="email"],
+  .inputBox input[type="file"],
+  .inputBox input[type="date"],
+  .inputDocs input[type="text"],
+  .inputDocs input[type="email"],
+  .inputDocs input[type="file"],
+  .inputDocs input[type="date"],
+  .inputBox1 input[type="text"] {
+      width: 100%; 
+  }    
+  .btn-submit {
+      margin-top: 20px; 
+  }
+}
+
+
+
+ 
